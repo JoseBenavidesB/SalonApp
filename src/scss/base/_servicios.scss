@@ -1,0 +1,53 @@
+.servicios h2 {
+    margin: 1rem 1rem 0 0;
+    font-size: 3rem;
+};
+
+.servicios h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+};
+
+.listado-servicios {
+
+    @include grid(2, $separacion);
+    gap: 2rem;
+    
+
+    .serviciosjson {
+        background-color: $blanco;
+        border-radius: 1rem;
+        text-align: left;
+        font-family: $fuente_principal;
+        padding: 1rem;
+
+        .nombre-servicio{
+            color: $negro;
+            font-size: $regular;
+            margin: 0 1rem;
+            margin-top: 1rem;
+        }
+        .precio-servicio {
+            color: $azul;
+            font-size: 2rem;
+            font-weight: $black;
+            margin: 0 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            
+        }
+    }
+
+};
+
+@include tablet{
+    .listado-servicios {
+        padding: 0 1rem 0 0;
+    }
+};
+
+
+.datos , .resumen {
+    display: none;
+};
+
