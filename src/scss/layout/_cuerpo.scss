@@ -1,0 +1,44 @@
+body {
+    background-color: $negro;
+}
+.contenedor-estetica {
+    background-color: $negro;
+    @include tablet {
+        height: 100vh;
+        @include grid(2, $separacion /4);
+    };
+
+    .imagen {
+        background-image: url("../img/1.webp");
+        height: 30rem;
+        background-size: cover;
+        background-position: center center;
+        @include tablet {
+            height: auto;
+        };
+    };
+    
+};
+
+
+.tabs {
+    
+    @include grid(3, 2rem);
+    @include tablet {
+        padding-right: 1rem;
+    };
+    
+    button{
+        background-color: $blanco;
+        font-size: 1.4rem;
+        font-weight: $bold;
+        padding: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        };
+    };
+};

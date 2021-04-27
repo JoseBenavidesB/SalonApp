@@ -3,16 +3,19 @@
     font-size: 3rem;
 };
 
-.servicios h3 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+.servicios p {
+    margin: 1rem 0 1rem 0;
 };
 
 .listado-servicios {
 
+    @include tablet {
+
     @include grid(2, $separacion);
-    gap: 2rem;
-    
+    gap: 1rem;
+    padding: 0rem;
+    margin-bottom: 0;
+    };
 
     .serviciosjson {
         background-color: $blanco;
@@ -20,6 +23,14 @@
         text-align: left;
         font-family: $fuente_principal;
         padding: 1rem;
+        margin-bottom: 1rem;
+        @include tablet {
+            margin: 0;
+        }
+        
+        
+        
+        
 
         .nombre-servicio{
             color: $negro;
